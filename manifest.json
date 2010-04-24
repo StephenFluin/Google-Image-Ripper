@@ -1,0 +1,22 @@
+{
+  "name": "Google Image Ripper",
+  "version": "0.5.5",
+  
+  "description": "Rewrites Google Images STuff",
+  "update_url":"http://mortalpowers.com/extensions/imageripper/imageripper.xml",
+
+  "minimum_chrome_version": "5.0.382.0",
+  "description": "Destyles the current page.",
+  "content_scripts" : [
+    {
+      "matches" : [
+        "http://www.google.com/images*",
+        "http://google.com/images*",
+        "http://images.google.com/images*"
+      ],
+      "js" : ["36918.user.js"],
+      "run_at" : "document_idle",
+      "all_frames" : true
+    }
+  ]
+}
